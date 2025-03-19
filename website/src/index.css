@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #d4af37;
+  --color-gold-light: #f4df9c;
+  --color-black: #0a0a0a;
+  --color-dark-gray: #1a1a1a;
+  --color-gray: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-black);
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.gold-text {
+  color: var(--color-gold);
+}
+
+.gold-border {
+  border-color: var(--color-gold);
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 1) 100%);
+}
+
+.watch-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.gold-button {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+}
+
+.outline-gold-button {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  transition: all 0.3s ease;
+}
+
+.outline-gold-button:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  margin: 4rem auto;
+  width: 80%;
+}
+
